@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import MainPage from './features/MainPage.tsx';
+import MainPage from './features/MainPage/MainPage.tsx';
 import { ForecastContext } from './context/ForecastContext.tsx';
 import type { Weather } from './types/Weather.ts';
 
@@ -12,7 +12,7 @@ function App() {
 	}
 	useEffect(() => {
 		fetchUrl(
-			'https://api.weatherapi.com/v1/forecast.json?key=fb8a149aeacf40d5862152810250706&q=London&days=1&aqi=no&alerts=no',
+			'https://api.weatherapi.com/v1/forecast.json?key=fb8a149aeacf40d5862152810250706&q=London&days=3&aqi=no&alerts=no',
 		).catch((error) => console.log(error));
 	}, []);
 	return (
