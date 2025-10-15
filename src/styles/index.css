@@ -1,2 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
 @import "tailwindcss";
+@layer base {
+    .swiper-wrapper {
+        @apply flex transition-transform duration-300 ease-in-out;
+    }
 
+    /* 🔹 Каждый слайд */
+    .swiper-slide {
+        @apply flex-shrink-0 w-full h-auto;
+    }
+
+    /* 🔹 Кастомные стрелки (если нужны базовые классы) */
+    .swiper-button-prev,
+    .swiper-button-next {
+        @apply bg-white/70 backdrop-blur-sm rounded-full px-3 py-2 shadow cursor-pointer select-none;
+    }
+}

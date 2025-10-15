@@ -12,7 +12,7 @@ function App() {
 	}
 	useEffect(() => {
 		fetchUrl(
-			'https://api.weatherapi.com/v1/forecast.json?key=fb8a149aeacf40d5862152810250706&q=London&days=3&aqi=no&alerts=no',
+			'https://api.weatherapi.com/v1/forecast.json?key=fb8a149aeacf40d5862152810250706&q=Kyiv&days=3&aqi=no&alerts=no',
 		).catch((error) => console.log(error));
 	}, []);
 	return (
